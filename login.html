@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#06aa5e">
+    <meta name="msapplication-navbutton-color" content="#06aa5e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Sign up | Basket ™</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+    <main class="card-container slideUp-animation">
+        <div class="image-container">
+            <h1 class="company">Basket <sup>&trade;</sup></h1>
+            <img src="signUp.svg" class="illustration" alt="">
+            <p class="quote">Sign up today to get exciting offers..!</p>
+            <a href="#btm" class="mobile-btm-nav">
+                <img src=".dbl-arrow.png" alt="">
+            </a>
+        </div>
+        <form action="" method="">
+            <div class="form-value">
+                <form action="#">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input class="input-container" type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-container">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-container">
+                        <label><input type="checkbox">Remember Me <a href="#">Forgot Password</a></label>
+                    </div>
+                    <button  type="button" onclick="redirectToHomepage()">Log in</button>
+                    <div class="register">
+                        <p>Don't have an account? <a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function redirectToHomepage() {
+            // You can add redirection logic here
+            // For example: window.location.href = 'dashboard.html';
+            alert('Redirect to Dashboard');
+        }
+    </script>
+        </form>
+    </main>
+    <section class="outro-overlay disabled slideUp-animation">
+        <h1 class="company">Basket <sup>&trade;</sup></h1>
+        <h1 class="outro-greeting">Thank's for signing up..!</h1>
+        <img src="shape.svg" alt="" class="shape">
+        <img src="signedUp.svg" alt="" id="signedUp-illustration" class="slideRight-animation">
+        <div class="author-link">
+            &copy;&nbsp;
+            <a href="https://www.0xabdulkhalid.ml/">0xabdulkhalid</a> |
+            <a href="https://www.github.com/0xabdulkhalid/basket-sign-up-form/">Source Code</a>
+        </div>
+    </section>
+</body>
+</html>

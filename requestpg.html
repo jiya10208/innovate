@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexstyle.css">
+    <title>Request</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #020735;
+        }
+    
+        h1 {
+            text-align: center;
+            color: #3498db;
+            margin-top: 50px;
+        }
+    
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            width: 100%;
+        }
+    
+        .form-box {
+            position: relative;
+            width: 400px;
+            background: #fff;
+            border: 2px solid #3498db;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+    
+        .form-value {
+            padding: 30px;
+        }
+    
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .inputbox {
+            position: relative;
+            margin-bottom: 20px;
+        }
+    
+        ion-icon {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: #3498db;
+            font-size: 1.5em;
+        }
+    
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #3498db;
+            outline: none;
+            font-size: 1em;
+            background-color: transparent;
+            color: #777;
+        }
+    
+        label {
+            position: absolute;
+            top: 50%;
+            left: 55px;
+            transform: translateY(-50%);
+            color: #777;
+            font-size: 0.9em;
+            pointer-events: none;
+            transition: .5s;
+        }
+    
+        input:focus~label,
+        input:valid~label {
+            top: -10px;
+            font-size: 0.8em;
+            color: #3498db;
+        }
+    
+        .button-box {
+            margin-top: 20px;
+        }
+    
+        button {
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+            background: #3498db;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: #fff;
+            font-size: 1em;
+            font-weight: 600;
+            transition: background 0.3s ease-in-out;
+        }
+    
+        button:hover {
+            background: #2874a6;
+        }
+    
+        .register {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    
+        .register p a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: 600;
+        }
+    
+        .register p a:hover {
+            text-decoration: underline;
+        }
+    
+        .project-description-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    
+        .project-description-box {
+            width: 48%;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+    
+        .project-description-box h3 {
+            color: #3498db;
+        }
+    
+        .project-description-box p {
+            color: #777;
+        }
+    </style>    
+</head>
+
+<body>
+    <h1>Initiate Request</h1>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <div class="inputbox">
+                        <ion-icon name="planet-outline"></ion-icon>
+                        <input type="file" required>
+                        <label for="">Upload Resume</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="document-text"></ion-icon>
+                        <input type="text" required>
+                        <label for="">Project Description</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="ticket-outline"></ion-icon>
+                        <input type="text" required>
+                        <label for="">Project Tags</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="layers-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Project Category</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="image-outline"></ion-icon>
+                        <input type="File" required>
+                        <label for="">Project Photo (if any)</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Expected Tech Stacks</label>
+                    </div>
+                    <button type="button" onclick="redirectToHomepage()">Initiate Request</button>
+                    <div class="register">
+                        <p>Already have an account? <a href="index.html">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+

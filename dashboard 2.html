@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <style>
+        em {
+            color: #ff183e;
+            font-family: 'Sacramento', cursive;
+        }
+
+        body {
+            background:  #EAf6F6;
+            color: #1c1c1d;
+        }
+
+        .container {
+            display: flex;
+            border-radius: 3px;
+            height: auto;
+            background-color: #e0e0e4;
+            color: #161010;
+            width: 98.5vw;
+        }
+
+        /* sidebar */
+
+        .sidebar {
+            border-bottom-right-radius: 10px;
+            width: 18rem;
+            height: auto;
+            color: #2d2a2a;
+            background-color: #ffdada;
+            line-height: 2.2rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        .highlight {
+            color: #443838;
+            font-weight: 600;
+            border-bottom: 4px solid #0e1b33;
+        }
+
+        .sidebar_content ul li {
+            padding: 0 9px;
+        }
+
+        /* navbar */
+
+        .mainContent {
+            padding-left: 12px;
+            width: 100%;
+        }
+
+        nav ul {
+            width: 100%;
+            height: 4rem;
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav ul li {
+            margin: 2px;
+            list-style-type: none;
+        }
+
+        nav ul div {
+            margin: 2px;
+            display: flex;
+            flex-flow: row;
+            list-style-type: none;
+        }
+
+        nav ul div li {
+            padding-left: 9px;
+        }
+
+        .image {
+            height: 100%;
+            padding: 0;
+            width: 5rem;
+        }
+
+        .image img {
+            height: 100%;
+            width: 90%;
+            border-radius: 800px;
+            border: 1px solid #000;
+        }
+
+        .search {
+            border-radius: 12px;
+            padding: 3px 9px;
+        }
+
+        .Details {
+            height: 20rem;
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem;
+        }
+
+        .mainimage {
+            height: 12rem;
+            width: 14rem;
+        }
+
+        .mainimage img {
+            width: 80%;
+            height: 90%;
+            border: 13px solid #00092f;
+            border-radius: 100px;
+        }
+
+        .highligh_detail {
+            border-radius: 12px;
+            width: 23rem;
+            line-height: 1.2rem;
+            color: #000;
+            padding: 10px;
+            background-color: #a3a3a3;
+        }
+
+        .dark {
+            background-color: #ccc7c7;
+        }
+
+        .AddProject {
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            background-color: #b5b5b5;
+            flex-flow: column;
+        }
+
+        .AddProject p {
+            height: 90%;
+            width: 91%;
+            text-align: center;
+            color: #4f4d4d;
+            font-size: 10.4rem;
+            border: 7px solid #6c6b6b;
+        }
+
+        .AddProject button {
+            color: #000;
+            border: 2px solid #6c6b6b;
+            background-color: #6c6b6b;
+        }
+
+        .projectsBox {
+            display: flex;
+            flex-flow: row;
+        }
+
+        .projects {
+            display: flex;
+            background-color: #d3cfcf;
+        }
+
+        h3 {
+            color: #1c1c1d;
+        }
+
+        .project {
+            background-color: #eacbcb;
+            padding: 10px;
+            border: 1px solid #bebabc;
+            display: flex;
+            background-color: #e0cdd1;
+            margin: 2px;
+            border-radius: 10px;
+            color: #484746;
+            padding: 10px;
+            font-weight: 500;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .project ul {
+            display: flex;
+            flex-flow: row;
+        }
+
+        .project ul li {
+            padding: 10px;
+        }
+
+        .button {
+            background-color: #f49595;
+            padding: 2px;
+            border-radius: 32px;
+            color: #000;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li class="logo">Project<em>Connect</em></li>
+            </ul>
+            <div>
+                <div class="sidebar_content">
+                    <h2 class="highlight">My profile</h2>
+                    <ul>
+                        <li>Personal Details</li>
+                        <li>Project Description</li>
+                        <li>Project Gallery</li>
+                        <li>Calendar</li>
+                        <li>Project Wishlist</li>
+                        <li>Blogs</li>
+                        <li>Friends</li>
+                    </ul>
+                </div>
+                <div class="sidebar_content">
+                    <h2 class="highlight">Help</h2>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Testimonials</li>
+                    </ul>
+                </div>
+                <div class="sidebar_content">
+                    <h2 class="highlight">Help</h2>
+                    <ul>
+                        <li>Terms and conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mainContent">
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <div>
+                        <li>DashBoard</li>
+                        <li>Projects</li>
+                        <li>LeaderBoard</li>
+                    </div>
+                    <input type="text" name="" id="" class="search" placeholder="Search uploaded projects">
+                    <li class="image"><img src="img.jpg" alt="image"></li>
+                </ul>
+            </nav>
+            <!-- Details -->
+            <div class="Details">
+                <div class="mainimage">
+                    <img src="img.jpg" alt="Jiya">
+                </div>
+                <div class="moreDetail">
+                    <div>
+                        <p>Name</p>
+                        <p class="highligh_detail">Jiya Choubey</p>
+                    </div>
+                    <div>
+                        <p>About</p>
+                        <p class="highligh_detail dark">
+                            An enthusiastic Coder who loves to write and develop. I have written two books at the age
+                            seventeen
+                        </p>
+                    </div>
+                    <div>
+                        <p>Profession</p>
+                        <p class="highligh_detail dark">Full stack Developer</p>
+                    </div>
+                </div>
+                <div class="AddProject">
+                    <p>+</p>
+                    <button>Add a new project</button>
+                </div>
+            </div>
+            <!-- project list -->
+            <div class="projectsBox">
+                <div class="currentProject">
+                    <h3>Recent Projects</h3>
+                    <div class="Projects">
+                        <div class="project">
+                            <ul>
+                                <li class="upvotes button">+16</li>
+                                <li class="techstack">NextJs | webOs| typeScript | NFT| vercel | Magic</li>
+                                <li class="Project_button button">Digibag</li>
+                            </ul>
+                        </div>
+                        <div class="project">
+                            <ul>
+                                <li class="upvotes button">+12</li>
+                                <li class="techstack">React | Firebase| Socket.io | Express.Js|MongoDB</li>
+                                <li class="Project_button button">Workify</li>
+                            </ul>
+                        </div>
+                        <div class="project">
+                            <ul>
+                                <li class="upvotes button">+6</li>
+                                <li class="techstack">React | Ethereum|Lido Finance |LangChain</li>
+                                <li class="Project_button button">CredChain</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="starredProject">
+                    <h3>Starred Projects</h3>
+                    <div class="Projects">
+                        <div class="project">
+                            <ul>
+                                <li class="upvotes button">+226</li>
+                                <li class="techstack">NextJs | webOs| Docker | NFT| Mantine | Magic</li>
+                                <li class="Project_button button">ThirdEye</li>
+                            </ul>
+                        </div>
+                        <div class="project">
+                            <ul>
+                                <li class="upvotes button">+142</li>
+                                <li class="techstack">React | Firebase| Socket.io | Express.Js|MongoDB</li>
+                                <li class="Project_button button">File Guardian</li>
+                            </ul>
+                        </div>
+                        <div class="project">
+                            <ul>
+                                <li class="upvotes button">+119</li>
+                                <li class="techstack">React | Ethereum|Lido Finance |LangChain</li>
+                                <li class="Project_button button">CredChain</li>
+                            </ul>
+                        </div>
+                        <div class="project">
+                            <ul>
+                                <li class="upvotes button">+101</li>
+                                <li class="techstack">React | Ethereum|Lido Finance |LangChain</li>
+                                <li class="Project_button button">Web3Verse</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
